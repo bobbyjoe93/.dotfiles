@@ -1,1 +1,2 @@
+// lint just the files in this PR
 CURR_BRANCH="$(git rev-parse --abbrev-ref HEAD)"; git diff --name-only master...$CURR_BRANCH | xargs rubocop
